@@ -1,0 +1,124 @@
+{
+  "recurring": [
+    {
+      "id": "luke-pay",
+      "name": "Luke's paychecks (2)",
+      "kind": "in",
+      "category": "Luke's pay",
+      "amount": 6365,
+      "startMonth": "2026-10",
+      "note": "2 biweekly checks"
+    },
+    {
+      "id": "mortgage",
+      "name": "Mortgage",
+      "kind": "out",
+      "category": "Housing",
+      "amount": 2000,
+      "startMonth": "2026-10"
+    },
+    {
+      "id": "home-equity",
+      "name": "Home equity loan",
+      "kind": "out",
+      "category": "Housing",
+      "amount": 518,
+      "startMonth": "2026-10"
+    },
+    {
+      "id": "luke-student",
+      "name": "Luke's student loan",
+      "kind": "out",
+      "category": "Loans",
+      "amount": 195,
+      "startMonth": "2026-10"
+    },
+    {
+      "id": "rachel-student",
+      "name": "Rachel's student loan",
+      "kind": "out",
+      "category": "Loans",
+      "amount": 315,
+      "startMonth": "2026-10"
+    },
+    {
+      "id": "tmobile",
+      "name": "T-Mobile",
+      "kind": "out",
+      "category": "Phone & internet",
+      "amount": 297,
+      "startMonth": "2026-10"
+    },
+    {
+      "id": "utilities",
+      "name": "Utilities",
+      "kind": "out",
+      "category": "Utilities",
+      "amount": 400,
+      "startMonth": "2026-10",
+      "note": "estimate"
+    },
+    {
+      "id": "streaming",
+      "name": "Streaming (Spotify, Disney+, Paramount+, Discovery+, Peacock)",
+      "kind": "out",
+      "category": "Subscriptions",
+      "amount": 80,
+      "startMonth": "2026-10",
+      "note": "estimate"
+    },
+    {
+      "id": "car-insurance",
+      "name": "Car insurance",
+      "kind": "out",
+      "category": "Insurance",
+      "amount": 200,
+      "startMonth": "2026-10"
+    },
+    {
+      "id": "kids-school",
+      "name": "Kids' school",
+      "kind": "out",
+      "category": "Kids & school",
+      "amount": 400,
+      "startMonth": "2026-10"
+    }
+  ],
+  "entries": [
+    {
+      "id": "oct-rachel-est",
+      "date": "2026-10-01",
+      "month": "2026-10",
+      "kind": "in",
+      "category": "Rachel's pay & tips",
+      "amount": 1850,
+      "note": "Rachel's take-home (estimate, replace with real)"
+    },
+    {
+      "id": "oct-groceries-est",
+      "date": "2026-10-01",
+      "month": "2026-10",
+      "kind": "out",
+      "category": "Groceries & household",
+      "amount": 600,
+      "note": "Groceries (estimate)"
+    },
+    {
+      "id": "oct-gas-est",
+      "date": "2026-10-01",
+      "month": "2026-10",
+      "kind": "out",
+      "category": "Gas",
+      "amount": 500,
+      "note": "Gas (estimate)"
+    }
+  ],
+  "annual": [],
+  "settings": [
+    {
+      "id": "goal",
+      "target": 5000,
+      "by": "2027-03"
+    }
+  ]
+}

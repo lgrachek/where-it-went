@@ -1,0 +1,24 @@
+{
+  "routes": [
+    { "route": "/.auth/login/github", "statusCode": 404 },
+    { "route": "/.auth/login/twitter", "statusCode": 404 },
+    { "route": "/manifest.webmanifest", "allowedRoles": ["anonymous"] },
+    { "route": "/icons/*", "allowedRoles": ["anonymous"] },
+    { "route": "/offline.html", "allowedRoles": ["anonymous"] },
+    { "route": "/sw.js", "allowedRoles": ["anonymous"], "headers": { "Cache-Control": "no-cache" } },
+    { "route": "/denied.html", "allowedRoles": ["authenticated"] },
+    { "route": "/api/*", "allowedRoles": ["family"] },
+    { "route": "/*", "allowedRoles": ["family"] }
+  ],
+  "responseOverrides": {
+    "401": { "statusCode": 302, "redirect": "/.auth/login/aad?post_login_redirect_uri=/" },
+    "403": { "rewrite": "/denied.html" }
+  },
+  "globalHeaders": {
+    "X-Content-Type-Options": "nosniff",
+    "Referrer-Policy": "same-origin",
+    "Content-Security-Policy": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; manifest-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'"
+  },
+  "mimeTypes": { ".webmanifest": "application/manifest+json" },
+  "platform": { "apiRuntime": "node:20" }
+}

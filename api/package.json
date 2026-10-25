@@ -1,0 +1,11 @@
+{
+  "name": "where-it-went-api",
+  "version": "1.0.0",
+  "private": true,
+  "main": "src/functions/*.js",
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "@azure/data-tables": "^13.3.0",
+    "@azure/functions": "^4.5.0"
+  }
+}
